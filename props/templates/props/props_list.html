@@ -1,0 +1,7 @@
+{% for prop in props %}
+    <div>
+        <p>published: {{ prop.published_date }}</p>
+        <h1><a href="">{{ prop.title }}</a></h1>
+        <p>{{ prop.description|linebreaksbr }}</p>
+    </div>
+{% endfor %}
